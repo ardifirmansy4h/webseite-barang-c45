@@ -70,7 +70,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item {{ Request::is('laporan') ? 'active' : '' }}">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('laporan') }}" class='sidebar-link'>
                         <i class="bi bi-file-text"></i>
                         <span>Laporan</span>
                     </a>

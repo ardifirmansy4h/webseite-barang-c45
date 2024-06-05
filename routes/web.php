@@ -24,3 +24,7 @@ Route::get('/penjualan', [PenjualanController::class, 'index'])->name('penjualan
 //Stok
 Route::get('/stok', [BarangController::class, 'tersedia'])->name('stok.tersedia');
 Route::get('/stok/barang/habis', [BarangController::class, 'habisBarang'])->name('stok.habis');
+
+//laporan
+Route::get('/laporan', [PenjualanController::class, 'indexLaporan'])->name('laporan');
+Route::post('/laporan', [PenjualanController::class, 'laporan'])->name('laporan.bulan');
